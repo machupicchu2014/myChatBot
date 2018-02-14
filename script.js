@@ -4,6 +4,7 @@ var conversation = "";
 $("#document").ready(function(){
   $("#inputSubmit").click(function(e){
     e.preventDefault();
+    if($("#in").val() !== ""){
     console.log($("#in").val());
     conversation += '<p class="user">' + $("#in").val() + '</p>';
     $("#conversation").html(conversation);
@@ -27,7 +28,7 @@ $("#document").ready(function(){
 	    }
 
 	});
-
+}
 
 
   })
